@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Programming Tutorial</title>
+		<meta name="description" content="">
+
+		<!-- Mobile Specific Metas
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- FONT
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
+	 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
+
+		<!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="./css/styles.css">
+
+
+		<!-- Favicon
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="shortcut icon" href="./favicon.ico"/>
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">
+						<h1>CHAO</h1>
+						<h6>Coding Course</h6>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main Nav -->
+		<section class="container">
+			<nav class="nav">
+							 
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="scratch.html">Scratch</a></li>
+					<li><a href="python1.html">Python I</a></li>
+					<li><a href="python2.html">Python II</a></li>
+					<li><a href="features.html">Features</a></li>
+				</ul>
+								
+			</nav>
+		</section>
+
+		<section class="main container">
+			
+
+
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="inner">
+				<div class="container">
+					<div class="copyright">
+						<span class="sub">© Copyright 2019 <a href="http://chaozhang.ca">Chao Zhang</a> - All Rights Reserved.
+					</div>
+			
+					<a href="#0" class="backtotop">Top</a>
+
+
+				</div>
+			</div>
+		</footer>
+
+
+		<script src="js/scripts.js"></script>
+
+		<script>
+		
+			$('.article #info').readmore({
+				speed: 600,
+				moreLink: '<a class="button-text" href="#">Read More <span>&darr;</span></a>',
+				lessLink: '<a class="button-text" href="#">Read Less <span>&uarr;</span></a>',
+				collapsedHeight: 120,
+				heightMargin: 20,
+				afterToggle: function(trigger, element, expanded) {
+						if(! expanded) { // The "Close" link was clicked
+						$('html, body').animate({scrollTop: element.offset().top}, {duration: 300});
+					}
+				}
+			});
+
+	  	</script>
+
+	</body>
+
+</html>
